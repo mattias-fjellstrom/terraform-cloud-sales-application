@@ -21,5 +21,6 @@ resource "azurerm_storage_account" "stg" {
   location                 = azurerm_resource_group.rg.location
   access_tier              = "Hot"
   account_kind             = "StorageV2"
+  account_tier             = "Standard"
   account_replication_type = var.account_replication_type
 }
